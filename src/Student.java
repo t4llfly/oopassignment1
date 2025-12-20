@@ -1,4 +1,5 @@
 public class Student extends Human {
+    // attributes (one static)
     private static String university = "AITU";
     private float gpa;
 

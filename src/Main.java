@@ -1,9 +1,13 @@
+// Vladimir Konovalov (MT-2507
+
 void main() {
+    // objects
     Human human = new Human("test", 18, true);
     Employee employee = new Employee();
     Student student = new Student("test3", 19, false, 3.22f);
     Scanner scanner = new Scanner(System.in);
 
+    // scanners
     System.out.println("Employee name: ");
     employee.setName(scanner.next());
     System.out.println("Employee age: ");
@@ -13,6 +17,7 @@ void main() {
     System.out.println("Employee's job name: ");
     employee.setJobName(scanner.next());
 
+    // output
     System.out.println("--- Human ---");
     System.out.println("Name: " + human.getName() + "\nAge: " + human.getAge() +
             "\nIs healthy: " + human.getHealthy()
