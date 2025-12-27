@@ -1,41 +1,58 @@
-// Vladimir Konovalov (MT-2507
+// Vladimir Konovalov (MT-2507)
 
 void main() {
     // objects
-    Human human = new Human("test", 18, true);
-    Employee employee = new Employee();
-    Student student = new Student("test3", 19, false, 3.22f);
-    Scanner scanner = new Scanner(System.in);
+    Employee employee1 = new Employee();
+    Human employee2 = new Employee("test2", 30, true, "designer");
+    IEmployee employee3 = new Employee("test3", 30, true, "designer");
+    Student student1 = new Student("test3", 19, false, 3.22f);
+    Human student2 = new Student("test4", 20, false, 3.22f);
+    IHuman student3 = new Student("test5", 18, true, 2.55f);
 
-    // scanners
-    System.out.println("Employee name: ");
-    employee.setName(scanner.next());
-    System.out.println("Employee age: ");
-    employee.setAge(scanner.nextInt());
-    System.out.println("Is employee healthy (true/false): ");
-    employee.setHealthy(scanner.nextBoolean());
-    System.out.println("Employee's job name: ");
-    employee.setJobName(scanner.next());
+//    Scanner scanner = new Scanner(System.in);
+//
+//    // scanners
+//    System.out.println("Employee 1 name: ");
+//    employee1.setName(scanner.next());
+//    System.out.println("Employee 1 age: ");
+//    employee1.setAge(scanner.nextInt());
+//    System.out.println("Is employee 1 healthy (true/false): ");
+//    employee1.setHealthy(scanner.nextBoolean());
+//    System.out.println("Employee 1's job name: ");
+//    employee1.setJobName(scanner.next());
 
     // output
-    System.out.println("--- Human ---");
-    System.out.println("Name: " + human.getName() + "\nAge: " + human.getAge() +
-            "\nIs healthy: " + human.getHealthy()
-    );
-    human.eat();
-    human.sleep();
+    System.out.println("--- Employee 1 ---");
+    employee1.eat();
+    employee1.sleep();
+    employee1.drink();
+    employee1.work();
+    employee1.walk();
+    employee1.run();
+    employee1.study();
 
-    System.out.println("--- Employee ---");
-    System.out.println("Name: " + employee.getName() + "\nAge: " + employee.getAge() +
-            "\nIs healthy: " + employee.getHealthy() + "\nJob: " + employee.getJobName()
-    );
-    employee.eat();
-    employee.sleep();
+    System.out.println("--- Employee 2 ---");
+    employee2.eat();
+    employee2.sleep();
+    employee2.drink();
 
-    System.out.println("--- Student ---");
-    System.out.println("Name: " + student.getName() + "\nAge: " + student.getAge() +
-            "\nIs healthy: " + student.getHealthy() + "\nGPA: " + student.getGpa()
-    );
-    student.eat();
-    student.sleep();
+    System.out.println("--- Employee 3 ---");
+    employee3.study();
+    employee3.work();
+
+    System.out.println("--- Student 1 ---");
+    student1.eat();
+    student1.sleep();
+    student1.drink();
+    student1.walk();
+    student1.run();
+
+    System.out.println("--- Student 2 ---");
+    student2.eat();
+    student2.sleep();
+    student2.drink();
+
+    System.out.println("--- Student 3 ---");
+    student3.walk();
+    student3.run();
 }

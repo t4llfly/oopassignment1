@@ -1,8 +1,8 @@
-public class Human {
+public abstract class Human {
     // common attributes
-    private String name;
-    private int age;
-    private boolean isHealthy;
+    protected String name;
+    protected int age;
+    protected boolean isHealthy;
 
     // constructors
     public Human(String name, int age, boolean isHealthy) {
@@ -12,6 +12,15 @@ public class Human {
     }
 
     public Human() {}
+
+    // methods
+    public void sleep() {
+        System.out.println("Sleeping");
+    }
+    public void eat() {
+        System.out.println("Eating");
+    }
+    public abstract void drink();
 
     // common getters and setters
     public String getName() { return name; }
@@ -23,11 +32,4 @@ public class Human {
     public boolean getHealthy() { return isHealthy; }
     public void setHealthy(boolean isHealthy) { this.isHealthy = isHealthy; }
 
-    // methods
-    public void sleep() {
-        System.out.println("Sleeping");
-    }
-    public void eat() {
-        System.out.println("Eating");
-    }
 }
