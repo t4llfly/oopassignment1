@@ -4,22 +4,10 @@ void main() {
     // objects
     Employee employee1 = new Employee();
     Human employee2 = new Employee("test2", 30, true, "designer");
-    IEmployee employee3 = new Employee("test3", 30, true, "designer");
-    Student student1 = new Student("test3", 19, false, 3.22f);
-    Human student2 = new Student("test4", 20, false, 3.22f);
-    IHuman student3 = new Student("test5", 18, true, 2.55f);
-
-//    Scanner scanner = new Scanner(System.in);
-//
-//    // scanners
-//    System.out.println("Employee 1 name: ");
-//    employee1.setName(scanner.next());
-//    System.out.println("Employee 1 age: ");
-//    employee1.setAge(scanner.nextInt());
-//    System.out.println("Is employee 1 healthy (true/false): ");
-//    employee1.setHealthy(scanner.nextBoolean());
-//    System.out.println("Employee 1's job name: ");
-//    employee1.setJobName(scanner.next());
+    IEmployee employee3 = new Employee("test3", 30, true, "frontend");
+    Student student1 = new Student("test4", 17, false, 3.55f);
+    Human student2 = new Student("test5", 20, false, 3.22f);
+    IHuman student3 = new Student("test6", 18, true, 2.55f);
 
     // output
     System.out.println("--- Employee 1 ---");
