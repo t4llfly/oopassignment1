@@ -30,10 +30,10 @@ public final class Student extends Human implements IHuman {
         System.out.println("Can't eat: not enough money");
     }
 
-    public static String getUniversity() {
+    public String getUniversity() {
         return university;
     }
-    public static void setUniversity(String university) {
+    public void setUniversity(String university) {
         Student.university = university;
     }
 
